@@ -1,0 +1,13 @@
+{
+  "name": "@suju-plus/docs",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vitepress dev ./src",
+    "build": "vitepress build ./src",
+    "preview": "vitepress preview src"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "vitepress-demo-plugin": "^1.4.1"
+  }
+}

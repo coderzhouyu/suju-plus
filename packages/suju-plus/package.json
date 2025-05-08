@@ -1,0 +1,21 @@
+{
+  "name": "suju-plus",
+  "version": "0.0.0-dev.1",
+  "description": "速聚科技的前端业务组件库",
+  "keywords": [
+    "suju-plus",
+    "ui framework",
+    "ui",
+    "vue"
+  ],
+  "homepage": "https://www.su0591.cn/",
+  "license": "MIT",
+  "peerDependencies": {
+
+  },
+  "dependencies": {
+    "@suju-plus/components": "workspace:*"
+  },
+  "devDependencies": {
+  }
+}

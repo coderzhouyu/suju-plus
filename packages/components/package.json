@@ -1,0 +1,11 @@
+{
+  "name": "@suju-plus/components",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vue": "^3.4.0"
+  }
+}
