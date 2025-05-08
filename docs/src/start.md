@@ -1,85 +1,47 @@
 # 快速开始
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+## 安装
 
-## Syntax Highlighting
+使用 npm 或 yarn 安装。
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+```bash
+npm i @eric-ui --save
+```
 
-**Input**
+## 开始使用
 
-````md
-```js{4}
+### 全局使用
+
+```js
+// 引入所有组件
+import EricUI from "eric-ui"
+// 引入样式
+import "eric-ui/dist/style.css"
+
+import App from "./App.vue"
+// 全局使用
+createApp(App).use(ErElement).mount("#app")
+```
+
+```vue
+<template>
+  <er-button>我是 Button</er-button>
+</template>
+```
+
+### 按需使用
+
+suju-plus 提供了基于 ES Module 的开箱即用的 Tree Shaking 功能。
+
+```vue
+<template>
+  <er-button>我是 Button</er-button>
+</template>
+
+<script>
+import { ErButton } from " er-element"
 export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
+  components: { ErButton },
 }
+</script>
 ```
-````
-
-**Output**
-
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-
-## Custom Containers
-
-**Input**
-
-```md
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-```
-
-**Output**
-
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-
-## More
-
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
