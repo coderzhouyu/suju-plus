@@ -29,3 +29,6 @@ coverage
 
 *.tsbuildinfo
 .vitepress/cache
+# Misc
+npm-debug.log*
+yarn-debug.log*
