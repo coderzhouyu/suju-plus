@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as n,ae as t}from"./chunks/framework.KqT1VPod.js";const o=JSON.parse('{"title":"快速开始","description":"","frontmatter":{},"headers":[],"relativePath":"start.md","filePath":"start.md"}'),l={name:"start.md"};function e(p,s,h,k,r,d){return n(),a("div",null,s[0]||(s[0]=[t("",19)]))}const c=i(l,[["render",e]]);export{o as __pageData,c as default};
